@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input id="text" type="text">
+  <button onclick="collect()">PRess</button>
+  <input type="number" id="myInput">  <button onclick="store()">Press</button>
+  <p>Your Answer</p>
+  <p id="ans"></p>
+
+  <script>
+    function store() {
+    function collect(){
+      let text = document.getElementById('text').textContent;
+       }
+      let newText = new String(text) // to convert into string
+      let data = document.getElementById('myInput').value; // Get the input value
+      const num = Number(data); // Convert to number
+
+      let result = newText.charAt(num)
+      document.getElementById("ans").innerHTML = result;
+
+
+      
+    }
+  </script>
+</body>
+</html>
